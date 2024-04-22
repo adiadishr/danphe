@@ -118,6 +118,7 @@ font-family: "Barlow", sans-serif;
   background:
     url('./assets/mainHero.png') center center / cover;
   z-index: -1;
+  background-attachment: fixed;
 }
 
 #mainStats {
@@ -137,6 +138,7 @@ font-family: "Barlow", sans-serif;
   filter: brightness(25%);
   z-index: -1;
   border-radius: 25px;
+  background-attachment: fixed;
 }
 
 #mainProject {
@@ -153,4 +155,5 @@ font-family: "Barlow", sans-serif;
   background: url('./assets/mainProject.png') center center / cover;
   filter: brightness(75%);
   z-index: -1;
+  background-attachment: fixed;
 }

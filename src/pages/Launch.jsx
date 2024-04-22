@@ -6,6 +6,7 @@ import Hero from '@/components/Launch/Hero'
 import Project from '@/components/Launch/Project'
 import Stats from '@/components/Launch/Stats'
 import WhyUs from '@/components/Launch/WhyUs'
+import TeamMembers from '@/components/Team/TeamMembers'
 import React from 'react'
 
 const Launch = () => {

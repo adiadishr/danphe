@@ -1,5 +1,6 @@
 import React from 'react'
 import art from '../../assets/danpheArt.png'
+import { FaArrowRight } from 'react-icons/fa6'
 
 const Art = () => {
   return (
@@ -13,7 +14,6 @@ const Art = () => {
           <p className='text-[28px]/[120%] tracking-tight text-neutral-500 text-center md:text-start'>Pioneers, Innovators, Designers</p>
         </div>
       </div>
-
     </div>
   )
 }

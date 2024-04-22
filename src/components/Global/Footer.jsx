@@ -1,4 +1,6 @@
 import React from 'react'
+import ContactDialog from './ContactDialog/ContactDialog'
+
 
 const Footer = () => {
     return (
@@ -14,14 +16,14 @@ const Footer = () => {
                     </div>
                     <div className='flex flex-col gap-4'>
                         <div className=' text-neutral-400 font-light tracking-tight text-[36px]/[95%]'>Socials</div>
-                        <a href=''  className='tracking-tight text-[36px]/[95%] hover:opacity-80 transition-all'>Instagram</a>
-                        <a  href='' className='tracking-tight text-[36px]/[95%] hover:opacity-80 transition-all'>Facebook</a>
-                        <a href=''  className='tracking-tight text-[36px]/[95%] hover:opacity-80 transition-all'>Linked In</a>
+                        <a href='' className='tracking-tight text-[36px]/[95%] hover:opacity-80 transition-all'>Instagram</a>
+                        <a href='' className='tracking-tight text-[36px]/[95%] hover:opacity-80 transition-all'>Facebook</a>
+                        <a href='' className='tracking-tight text-[36px]/[95%] hover:opacity-80 transition-all'>Linked In</a>
                     </div>
                 </div>
                 <div className='flex flex-col md:w-[27.5%] items-start gap-6'>
                     <div className='tracking-tighter text-neutral-800 font-medium text-[16px]/[120%]'>Have questions?</div>
-                    <button className='w-full text-center bg-sky-500 tracking-tighter text-white p-4 rounded-xl font-medium text-[16px]/[120%] hover:opacity-80'>Contact Us</button>
+                    <ContactDialog />
                     <div className='flex flex-col gap-2'>
                         <div className='tracking-tighter text-neutral-800 font-medium text-[16px]/[120%]'>Stay Updated</div>
                         <div className='tracking-tighter text-neutral-400 font-medium text-[16px]/[120%]'>Drop your email to know what's coming</div>
@@ -34,7 +36,7 @@ const Footer = () => {
             </div>
             <div className='flex flex-col pb-10 pt-16 md:pt-0'>
                 <div className='tracking-tight text-neutral-400 font-light text-[16px]/[120%]'>@2024 Danphe Rocketry</div>
-                <div className='tracking-tight text-neutral-800 font-regular text-[16px]/[120%]'>Designed and Maintained by Antarikshya</div>
+                <div className='tracking-tight text-neutral-800 font-regular text-[16px]/[120%]'>Designed and Maintained by <a className='underline' href="https://project0rbit.com">Antarikshya</a></div>
             </div>
         </div>
     )
