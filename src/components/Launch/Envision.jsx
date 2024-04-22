@@ -14,7 +14,7 @@ const Envision = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex md:w-1/2 h-full flex-col gap-[24px]">
+                <div className="flex md:w-1/2 h-full flex-col gap-8 md:gap-[24px] ">
                     <div className='text-[50px]/[110%] tracking-tighter text-neutral-900'>We envision a future where Nepal emerges as a key player in the global aerospace community.</div>
                     <div className='text-[28px]/[120%] tracking-tight text-black'>Leveraging our expertise and resources, we develop cutting-edge rocket propulsion technology,</div>
                     <div className='text-[28px]/[120%] tracking-tight text-neutral-500 pb-8 md:pb-0'>and we hope to lead the charge.</div>
