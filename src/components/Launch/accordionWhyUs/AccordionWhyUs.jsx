@@ -16,7 +16,7 @@ const AccordionWhyUs = () => {
                 </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
-                <AccordionTrigger className='text28 text-black'>02. Innovation at our Core</AccordionTrigger>
+                <AccordionTrigger className='text28 text-start text-black'>02. Innovation at our Core</AccordionTrigger>
                 <AccordionContent className='py-8 text24 tracking-tight text-neutral-500 text-justify text-pretty'>
                     We are at the forefront of developing state-of-the-art rocket engines using the latest technologies and materials. Our pursuit of innovation ensures that we stay ahead in the ever-evolving field of aerospace engineering.
                 </AccordionContent>
