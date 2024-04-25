@@ -3,8 +3,23 @@ import React from 'react'
 
 const Hero = () => {
     return (
-        <div id='hero' className='flex md:flex-row flex-col h-max md:h-[120vh] min-h-screen justify-between px-[10%] items-center'>
-         
+        <div id='hero' className='flex h-max min-h-screen justify-center items-center px-[10%]'>
+            <div className="flex w-full h-max mt-[60px]">
+                <div className="flex lg:w-1/2 flex-col gap-8">
+                    <div className="text-[50px]/[110%] tracking-tighter text-white">
+                        Danphe Rocketry is a pioneering aerospace company based in Nepal
+                    </div>
+                    <div className="text-[28px]/[120%] tracking-tight text-neutral-100">
+                        We are committed to designing and manufacturing innovative rocket engines that propel us towards the stars
+                    </div>
+                    <div className='text-[20px]/[120%] text-white border-white tracking-tight font-bold w-80 border-b-2 pb-4 justify-between flex'>
+                        <div className="flex justify-between w-full hover:translate-y-[-5px] transition-all duration-300 cursor-pointer group">
+                            Read more about us
+                            <div className='flex items-center justify-center font-semibold group-hover:rotate-[-45deg] transition-all duration-300 ease-in-out'><FaArrowRight /></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }

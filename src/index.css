@@ -138,7 +138,6 @@ font-family: "Barlow", sans-serif;
   filter: brightness(25%);
   z-index: -1;
   border-radius: 25px;
-  background-attachment: fixed;
 }
 
 #mainProject {

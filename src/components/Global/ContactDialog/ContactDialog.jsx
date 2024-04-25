@@ -11,10 +11,10 @@ import {
     DrawerTrigger,
 } from "@/components/ui/drawer"
 
-const ContactDialog = () => {
+const ContactDialog = ({classList, title}) => {
     return (
         <Drawer>
-            <DrawerTrigger className='w-full text-center bg-sky-500 tracking-tighter text-white p-4 rounded-xl font-medium text-[16px]/[120%] hover:opacity-80'>Contact Us</DrawerTrigger>
+            <DrawerTrigger className={classList}>{title}</DrawerTrigger>
             <DrawerContent className='md:mx-[10%] h-5/6'>
                 <DrawerHeader >
                     <DrawerTitle>Are you absolutely sure?</DrawerTitle>

@@ -37,9 +37,9 @@ function getPhoto(photo) {
 
 const TeamPhoto = ({ photo, delay, name, position }) => {
     return (
-        <div data-aos='zoom-in' data-aos-duration='900' data-aos-delay={delay} className="group rounded-full size-[20rem] overflow-hidden relative shadow-2xl">
-            <img src={getPhoto(photo)} alt="" className='absolute rounded-full size-[inherit] object-cover object-center brightness-[.85] group-hover:scale-[1.15] transition-all duration-[700ms] ease-in-out group-hover:blur-[6px] group-hover:brightness-75 cursor-pointer  z-[-1]' />
-            <div className='absolute z-50 flex size-[inherit] items-center justify-center  group-hover:scale-100 opacity-0 group-hover:opacity-100 transition-all duration-[600ms] text-center flex-col px-[5%] gap-2 mt-4 divide-y'>
+        <div data-aos='zoom-in' data-aos-duration='700' data-aos-once='true' data-aos-delay={delay} className="group rounded-full size-[17.5rem] overflow-hidden relative shadow-2xl">
+            <img src={getPhoto(photo)} alt="" className='absolute rounded-full size-[calc(inherit+4rem)] object-cover object-center brightness-[.85] group-hover:scale-[1.15] transition-all duration-700 ease-in-out group-hover:blur-[6px] group-hover:brightness-75 cursor-pointer  z-[-1]' />
+            <div className='absolute z-50 flex size-[inherit] items-center justify-center  group-hover:scale-100 opacity-0 group-hover:opacity-100 transition-all duration-700 text-center flex-col px-[5%] gap-2 mt-4 divide-y'>
                 <div className='text-white text-xl'>{name}</div>
                 <div className='text-lg text-white font-extralight pt-2'>{position}</div>
             </div>
