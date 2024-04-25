@@ -9,7 +9,9 @@ AOS.init();
 const App = () => {
   return (
     <>
-    <Team />
+      <Launch />
+      <Team />
+      <Research />
     </>
   )
 }
