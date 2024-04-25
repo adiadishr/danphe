@@ -18,7 +18,7 @@ const Envision = () => {
                     <div className='text50 text-neutral-900'>We envision a future where Nepal emerges as a key player in the global aerospace community.</div>
                     <div className='text28 text-black'>Leveraging our expertise and resources, we develop cutting-edge rocket propulsion technology,</div>
                     <div className='text28 text-neutral-500 pb-8 md:pb-0'>and we hope to lead the charge.</div>
-                    <div className='textLink text-[#1e1e1e] border-[#1e1e1e]  w-80 border-b-2 border- pb-4 mb-16 md:mb-0 justify-between md:hidden flex'>
+                    <div className='textLink text-[#1e1e1e] border-[#1e1e1e] w-[75%] md:w-80 border-b-2 border- pb-4 mb-16 md:mb-0 justify-between md:hidden flex'>
                         <div className="flex justify-between w-full hover:translate-y-[-5px] transition-all duration-300 cursor-pointer group">
                             Take a look at our team
                             <div className='flex items-center justify-center font-semibold group-hover:rotate-[-45deg] transition-all duration-300 ease-in-out'><FaArrowRight /></div>
