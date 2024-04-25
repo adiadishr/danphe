@@ -10,8 +10,8 @@ const Art = () => {
           <img src={art} alt="" />
         </div>
         <div className='flex flex-col md:items-start justify-center md:w-1/2 gap-16 md:ml-32'>
-          <h5 className='text-neutral-800 text-[86px]/[95%] tracking-tighter text-center md:text-start'>Danphe Rocketry  </h5>
-          <p className='text-[28px]/[120%] tracking-tight text-neutral-500 text-center md:text-start'>Pioneers, Innovators, Designers</p>
+          <h5 className='text-neutral-800 text86 text-center md:text-start'>Danphe Rocketry  </h5>
+          <p className='text28 text-neutral-500 text-center md:text-start'>Pioneers, Innovators, Designers</p>
         </div>
       </div>
     </div>

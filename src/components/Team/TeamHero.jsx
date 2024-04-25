@@ -6,10 +6,10 @@ const TeamHero = () => {
         <div className='flex min-h-screen px-[10%] items-center justify-center'>
             <div className="flex lg:flex-row flex-col w-full h-max mt-[180px] md:mt-[80px]">
                 <div data-aos='fade-up' data-aos-duration='700' className="flex lg:w-1/2 flex-col gap-8 lg:pr-14 pb-14 lg:pb-0">
-                    <div className="text-[36px]/[110%] md:text-[50px]/[110%] tracking-tighter text-neutral-800 text-center lg:text-start">
+                    <div className="text50 text-neutral-800 text-center lg:text-start">
                         Our team is our greatest asset comprised of skilled engineers, scientists, and enthusiasts.
                     </div>
-                    <div className="text-[24px]/[120%] md:text-[28px]/[120%] tracking-tight text-black text-center lg:text-start">
+                    <div className="text28 text-black text-center lg:text-start">
                         Together, we strive to push the boundaries of what's possible in the field of space technology, putting Nepal on the map as a hub for aerospace excellence.
                     </div>
                 </div>
