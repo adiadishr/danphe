@@ -7,7 +7,6 @@ import Navbar from '@/components/Global/Navbar'
 const Team = () => {
     return (
         <div>
-            <Navbar />
             <TeamHero />
             <TeamMembers />
             <Footer />

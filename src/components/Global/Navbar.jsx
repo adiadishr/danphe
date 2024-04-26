@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import logo from '../../assets/logo.png';
-import { RiMenu3Fill } from "react-icons/ri";
 import { motion } from "framer-motion"
-import { Menu } from 'lucide-react';
+import { Link } from "react-router-dom"
 
 const Navbar = () => {
 
@@ -10,7 +9,13 @@ const Navbar = () => {
 
     const toggleNav = () => {
         setNav(!nav);
-        console.log(nav);
+    };
+
+    const routeTo = () => {
+        setNav(!nav);
+        window.scrollTo({
+            top: 0,
+        });
     };
 
     return (
@@ -65,10 +70,12 @@ const Navbar = () => {
                 nav ? (
                     <div data-aos='fade' className='fixed w-full h-[100vh] inset-0 z-30 bg-white/80 px-[2%] backdrop-blur-md flex'>
                         <div className='flex flex-col gap-4 pt-20 md:pt-24 divide-y w-full divide-neutral-600/50'>
-                            <div data-aos='fade' data-aos-delay='100' data-aos-duration='300' className='text50 text-black hover:text-neutral-600 cursor-pointer'>Launch</div>
-                            <div data-aos='fade' data-aos-delay='100' data-aos-duration='400' className='text50 text-black pt-4 hover:text-neutral-600 cursor-pointer'>Research</div>
-                            <div data-aos='fade' data-aos-delay='100' data-aos-duration='500' className='text50 text-black pt-4 hover:text-neutral-600 cursor-pointer'>Team</div>
-                            <div data-aos='fade' data-aos-delay='100' data-aos-duration='600' className='text50 text-black pt-4 hover:text-neutral-600 cursor-pointer'>Explore</div>
+                            <Link onClick={routeTo} to='/' data-aos='fade' data-aos-delay='100' data-aos-duration='300' className='text50 text-black hover:text-neutral-600 cursor-pointer'>Launch</Link>
+                            <Link onClick={routeTo} to="/research" className='text50 text-black pt-4 hover:text-neutral-600 cursor-pointer' data-aos='fade' data-aos-delay='100' data-aos-duration='400'>
+                                Research
+                            </Link>
+                            <Link onClick={routeTo} to='/team' data-aos='fade' data-aos-delay='100' data-aos-duration='500' className='text50 text-black pt-4 hover:text-neutral-600 cursor-pointer'>Team</Link>
+                            <Link onClick={routeTo} to='explore' data-aos='fade' data-aos-delay='100' data-aos-duration='600' className='text50 text-black pt-4 hover:text-neutral-600 cursor-pointer'>Explore</Link>
                         </div>
                         <div className='absolute bottom-8 pr-[5%] w-full items-center justify-center flex'>
                             <div data-aos='fade' data-aos-duration='600' className='text28 text-center'>Danphe Rocketry</div>

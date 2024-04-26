@@ -1,18 +1,26 @@
 import React from 'react'
 import ContactDialog from './ContactDialog/ContactDialog'
+import { Link } from 'react-router-dom'
 
 
 const Footer = () => {
+
+    const footerRouteTo = () => {
+        window.scrollTo({
+            top: 0,
+        });
+    };
+
     return (
         <div data-aos='fade-up' data-aos-duration='900' data-aos-delay='300' data-aos-once='true' className='min-h-[70vh] h-max flex px-[10%] items-start justify-between relative flex-col'>
             <div className='w-full mt-24 md:mt-20 flex justify-between flex-col md:flex-row gap-16 md:gap-0'>
                 <div className='flex md:gap-32 gap-[20%] md:justify-start'>
                     <div className='flex flex-col gap-4'>
                         <div className=' text-neutral-400 font-light tracking-tight md:text-[36px]/[95%] text-[28px]/[95%]'>General Links</div>
-                        <a href='' className='tracking-tight md:text-[36px]/[95%] text-[28px]/[95%] hover:opacity-80 transition-all'>Launch</a>
-                        <a href='' className='tracking-tight md:text-[36px]/[95%] text-[28px]/[95%] hover:opacity-80 transition-all'>Research</a>
-                        <a href='' className='tracking-tight md:text-[36px]/[95%] text-[28px]/[95%] hover:opacity-80 transition-all'>Our Team</a>
-                        <a href='' className='tracking-tight md:text-[36px]/[95%] text-[28px]/[95%] hover:opacity-80 transition-all'>Explore</a>
+                        <Link onClick={footerRouteTo} to='/' className='tracking-tight md:text-[36px]/[95%] text-[28px]/[95%] hover:opacity-80 transition-all'>Launch</Link>
+                        <Link onClick={footerRouteTo} to='/research' className='tracking-tight md:text-[36px]/[95%] text-[28px]/[95%] hover:opacity-80 transition-all'>Research</Link>
+                        <Link onClick={footerRouteTo} to='/team' className='tracking-tight md:text-[36px]/[95%] text-[28px]/[95%] hover:opacity-80 transition-all'>Our Team</Link>
+                        <Link onClick={footerRouteTo} to='/explore' className='tracking-tight md:text-[36px]/[95%] text-[28px]/[95%] hover:opacity-80 transition-all'>Explore</Link>
                     </div>
                     <div className='flex flex-col gap-4'>
                         <div className=' text-neutral-400 font-light tracking-tight md:text-[36px]/[95%] text-[28px]/[95%]'>Socials</div>

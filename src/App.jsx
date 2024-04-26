@@ -5,15 +5,26 @@ import Team from "./pages/Team";
 import Research from "./pages/Research";
 import Explore from "./pages/Explore";
 AOS.init();
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+} from "react-router-dom";
+import Navbar from "./components/Global/Navbar";
 
 
 const App = () => {
   return (
     <>
-      <Launch />
-      <Team />
-      <Research />
-      <Explore />
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route exact path='/' component={Launch} />
+          <Route exact path='/team' component={Team} />
+          <Route exact path='/research' component={Research} />
+          <Route exact path='/explore' component={Explore} />
+        </Switch>
+      </Router>
     </>
   )
 }
