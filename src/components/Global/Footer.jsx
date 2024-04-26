@@ -12,7 +12,7 @@ const Footer = () => {
     };
 
     return (
-        <div data-aos='fade-up' data-aos-duration='900' data-aos-delay='300' data-aos-once='true' className='min-h-[70vh] h-max flex px-[10%] items-start justify-between relative flex-col'>
+        <div data-aos='fade-up' data-aos-duration='700' data-aos-once='true' className='min-h-[70vh] h-max flex px-[10%] items-start justify-between relative flex-col'>
             <div className='w-full mt-24 md:mt-20 flex justify-between flex-col md:flex-row gap-16 md:gap-0'>
                 <div className='flex md:gap-32 gap-[20%] md:justify-start'>
                     <div className='flex flex-col gap-4'>
