@@ -24,9 +24,9 @@ const Footer = () => {
                     </div>
                     <div className='flex flex-col gap-4'>
                         <div className=' text-neutral-400 font-light tracking-tight md:text-[36px]/[95%] text-[28px]/[95%]'>Socials</div>
-                        <a href='' className='tracking-tight md:text-[36px]/[95%] text-[28px]/[95%] hover:opacity-80 transition-all'>Instagram</a>
-                        <a href='' className='tracking-tight md:text-[36px]/[95%] text-[28px]/[95%] hover:opacity-80 transition-all'>Facebook</a>
-                        <a href='' className='tracking-tight md:text-[36px]/[95%] text-[28px]/[95%] hover:opacity-80 transition-all'>Linked In</a>
+                        <a href='#' className='tracking-tight md:text-[36px]/[95%] text-[28px]/[95%] hover:opacity-80 transition-all'>Instagram</a>
+                        <a href='https://m.facebook.com/100069567636985/' target='_blank' className='tracking-tight md:text-[36px]/[95%] text-[28px]/[95%] hover:opacity-80 transition-all'>Facebook</a>
+                        <a href='#' className='tracking-tight md:text-[36px]/[95%] text-[28px]/[95%] hover:opacity-80 transition-all'>LinkedIn</a>
                     </div>
                 </div>
                 <div className='flex flex-col md:w-[27.5%] items-start gap-6'>

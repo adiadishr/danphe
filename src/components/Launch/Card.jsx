@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import demo from '../../assets/demoImage.png'
+import demo1 from '../../assets/carousel1.jpg'
+import demo2 from '../../assets/carousel2.jpg'
+import demo3 from '../../assets/carousel3.jpg'
 
 
 import { Navigation, Autoplay, Pagination } from 'swiper/modules';
@@ -44,16 +47,16 @@ const Card = () => {
           className="w-full h-full"
         >
           <SwiperSlide>
-            <img src={demo} className="object-cover w-100% h-10%" alt="card1" />
+            <img src={demo} className="object-cover w-full h-full rounded-3xl" alt="card1" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={demo} className="object-cover w-100% h-10%" alt="card2" />
+            <img src={demo1} className="object-cover w-full h-full rounded-3xl" alt="card2" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={demo} className="object-cover w-100% h-10%" alt="card3" />
+            <img src={demo2} className="object-coverw-full h-full rounded-3xl" alt="card3" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={demo} className="object-cover w-100% h-10%" alt="card4" />
+            <img src={demo3} className="object-cover w-full h-full rounded-3xl" alt="card4" />
           </SwiperSlide>
         </Swiper>
       </div>
