@@ -91,7 +91,7 @@ html {
 }
 
 .navLink {
-  @apply text-white
+  @apply text-black
 }
 
 .activeNavLink {
@@ -184,7 +184,7 @@ html {
 
 #researchHero {
   position: relative;
-  z-index: 50;
+  z-index: 1;
 }
 
 #researchHero::before {

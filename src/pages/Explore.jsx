@@ -6,7 +6,7 @@ import ExploreCard from "@/components/Explore/ExploreCard";
 const Explore = () => {
     return (
         <div>
-            <ExploreCard />
+            {/* <ExploreCard /> */}
             <Art />
             <Footer />
         </div>
