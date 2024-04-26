@@ -83,7 +83,7 @@ const ExploreCard = () => {
     ]
 
     return (
-        <div className='flex ml-10 flex-wrap'>
+        <div className='flex w-full px-[10%] items-center justify-center flex-wrap'>
             {explore.map((val, index) => (
                 <div
                     className='p-[60px]  text-center '

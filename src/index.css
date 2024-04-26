@@ -123,7 +123,7 @@ html {
 }
 
 .textLink {
-  @apply text-[16px]/[120%] md:text-[20px]/[120%] tracking-tight font-bold
+  @apply text-[18px]/[120%] md:text-[20px]/[120%] tracking-tight font-bold
 }
 
 #hero {

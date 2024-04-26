@@ -1,22 +1,50 @@
-import React from 'react'
-import photo from '../../assets/brian-mcgowan-I0fDR8xtApA-unsplash.jpg'
-import ramHari from '../../assets/ramHari.png'
+import React, { useState } from 'react'
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+import {
+    Fullscreen,
+    Download,
+    Thumbnails
+} from 'yet-another-react-lightbox/plugins'
+import "yet-another-react-lightbox/plugins/thumbnails.css";
+import photo1 from '../../assets/test.jpeg';
+import photo2 from '../../assets/oxygen.jpeg';
+import photo3 from '../../assets/demo.gif';
+
+export const slides = [
+    {
+        src: photo1,
+        title: 'Slide Title One',
+        description: 'Slide Description One\n\nthis is new line',
+    },
+    {
+        src: photo2,
+        title: 'Slide Title Two',
+        description: 'Slide Description Two',
+    },
+    {
+        src: photo3,
+        title: 'Slide Title Three',
+        description: 'Slide Description Three',
+    },
+    // Add more slides as needed...
+];
+
 
 const ExploreMain = () => {
+
+    const [open, setOpen] = useState(false);
+
     return (
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-full px-[10%]'>
-            <div className='flex'><img className='object-cover object-center rounded-lg hover:opacity-80' src={photo} alt="" /></div>
-            <div className='flex'><img className='object-cover object-center rounded-lg hover:opacity-80' src={ramHari} alt="" /></div>
-            <div className='flex'><img className='object-cover object-center rounded-lg hover:opacity-80' src={photo} alt="" /></div>
-            <div className='flex'><img className='object-cover object-center rounded-lg hover:opacity-80' src={ramHari} alt="" /></div>
-            <div className='flex'><img className='object-cover object-center rounded-lg hover:opacity-80' src={photo} alt="" /></div>
-            <div className='flex'><img className='object-cover object-center rounded-lg hover:opacity-80' src={ramHari} alt="" /></div>
-            <div className='flex'><img className='object-cover object-center rounded-lg hover:opacity-80' src={photo} alt="" /></div>
-            <div className='flex'><img className='object-cover object-center rounded-lg hover:opacity-80' src={ramHari} alt="" /></div>
-            <div className='flex'><img className='object-cover object-center rounded-lg hover:opacity-80' src={photo} alt="" /></div>
-            <div className='flex'><img className='object-cover object-center rounded-lg hover:opacity-80' src={ramHari} alt="" /></div>
-            <div className='flex'><img className='object-cover object-center rounded-lg hover:opacity-80' src={photo} alt="" /></div>
-            <div className='flex'><img className='object-cover object-center rounded-lg hover:opacity-80' src={ramHari} alt="" /></div>
+        <div data-aos='fade-up' data-aos-once='true' data-aos-duration='700' className='gap-8 w-full px-[10%] grid grid-cols-1 md:grid-cols-3'>
+            <button onClick={() => setOpen(true)}>Open</button>
+            <Lightbox
+                plugins={[Fullscreen, Download, Thumbnails]}
+                open={open}
+                close={() => setOpen(false)}
+                slides={slides}
+            />
+
         </div>
     )
 }

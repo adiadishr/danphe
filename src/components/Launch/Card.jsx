@@ -23,9 +23,8 @@ const Card = () => {
     };
   }, []);
   return (
-    <div className="flex justify-center items-center h-screen w-screen pt-[160px]">
-
-      <div className="relative w-full  h-full ">
+    <div data-aos='fade' data-aos-duration='700' data-aos-once='true' className="flex justify-center items-center h-screen w-screen pt-[160px]">
+      <div className="relative w-full h-full ">
         <Swiper
           effect={'coverflow'}
 

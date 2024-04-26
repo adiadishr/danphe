@@ -18,9 +18,16 @@ const Navbar = () => {
         });
     };
 
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        })
+    }
+
     return (
         <>
-            <div className='fixed flex right-0 md:mr-[2%] mr-[10%] z-20 w-20 items-center justify-center'>
+            <div onClick={scrollToTop} className='fixed flex right-0 md:mr-[2%] mr-[10%] z-20 w-20 items-center justify-center cursor-pointer'>
                 <img src={logo} className='w-full h-full flex' alt="" />
             </div>
             <div className='fixed left-0 top-[16px] flex ml-[10%] md:ml-[2%] z-50 items-center justify-center'>
