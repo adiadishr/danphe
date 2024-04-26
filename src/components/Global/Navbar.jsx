@@ -22,7 +22,7 @@ const Navbar = () => {
                 <motion.button
                     onClick={toggleNav}
                     className='relative size-10 text24 rounded-2xl hover:bg-white/80 bg-white/40  transition-colors duration-300 text-black  backdrop-blur-3xl'
-                    animate={nav ? "open" : "closed"}
+                    animate={nav ? "open" : "close"}
                 >
                     <motion.span
                         style={{
@@ -35,8 +35,9 @@ const Navbar = () => {
                         variants={{
                             open: {
                                 rotate: "45deg",
+                                top: '50%',
                             },
-                            closed: {
+                            close: {
                                 rotate: "0deg",
                             }
                         }}
@@ -47,6 +48,15 @@ const Navbar = () => {
                             top: '60%',
                             x: '-50%',
                             y: '-50%',
+                        }}
+                        variants={{
+                            open: {
+                                rotate: "-45deg",
+                                top: '50%',
+                            },
+                            close: {
+                                rotate: "0deg",
+                            }
                         }}
                         className='absolute h-[1.5px] w-6 bg-black' />
                 </motion.button>
