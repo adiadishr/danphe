@@ -10,7 +10,7 @@ import {
     DrawerTitle,
     DrawerTrigger,
 } from "@/components/ui/drawer"
-import { MdOutlineLocalPhone, MdOutlineMailOutline  } from "react-icons/md";
+import { MdOutlineLocalPhone, MdOutlineMailOutline } from "react-icons/md";
 
 
 const ContactDialog = ({ classList, title }) => {
@@ -27,18 +27,18 @@ const ContactDialog = ({ classList, title }) => {
                         <div className='text50 text-sky-600 pl-[5%] items-center justify-center flex'>
                             <MdOutlineLocalPhone />
                         </div>
-                        <div className='text32 text-sky-600 pl-[5%] items-center justify-center flex'>
+                        <div className='md:text-[32px]/[120%] text-[20px]/[120%] text-sky-600 pl-[5%] items-center justify-center flex'>
                             Contact us here: <br />
-                            +977 9843011770
+                            +977 9808579417
                         </div>
                     </div>
                     <div className='flex border-2 h-1/2 border-sky-600 rounded-3xl items-center justify-start pl-8'>
                         <div className='text50 text-sky-600 pl-[5%] items-center justify-center flex'>
-                        <MdOutlineMailOutline />
+                            <MdOutlineMailOutline />
                         </div>
-                        <div className='text32 text-sky-600 pl-[5%] items-center justify-center flex'>
+                        <div className='md:text-[32px]/[120%] text-[20px]/[120%] text-sky-600 pl-[5%] items-center justify-center flex'>
                             You can email us at: <br />
-                            danpherocketry@gmail.com
+                            dibbadanny@gmail.com
                         </div>
                     </div>
                 </div>
